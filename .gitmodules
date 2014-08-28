@@ -2,3 +2,6 @@
 	path = ansible-examples
 	url = git@github.com:trinitronx/ansible-examples.git
 	branch = develop
+[submodule "ursula"]
+	path = ursula
+	url = https://github.com/blueboxgroup/ursula.git
