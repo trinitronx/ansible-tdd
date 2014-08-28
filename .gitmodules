@@ -1,0 +1,4 @@
+[submodule "ansible-examples"]
+	path = ansible-examples
+	url = git@github.com:trinitronx/ansible-examples.git
+	branch = develop
