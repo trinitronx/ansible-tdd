@@ -6,6 +6,7 @@ It includes many examples given and sourced from these sources:
 
  - [Tighten Your Quality Feedback Loop][1]
  - [Infrastructure Testing with Ansible and Serverspec][2]
+ - [kitchen-ansible Test Kitchen Provisioner][4]
 
 Installing TDD Tools
 ====================
