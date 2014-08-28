@@ -5,3 +5,6 @@
 [submodule "ursula"]
 	path = ursula
 	url = https://github.com/blueboxgroup/ursula.git
+[submodule "ansible-sample-tdd"]
+	path = ansible-sample-tdd
+	url = https://github.com/volanja/ansible-sample-tdd.git
