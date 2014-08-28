@@ -33,7 +33,7 @@ Running Test Kitchen & Serverspec Example
 
 The ansible-examples repo contains a demo of using [`test-kitchen`][5] with ansible and the [`kitchen-ansible`][4] Provisioner.  To try it out:
 
- 1. Checkout submodule repos: `git submodule init`
+ 1. Checkout submodule repos: `git submodule update --init`
  2. `cd ansible-examples/tomcat-standalone`
  3. Run Test Kitchen: `kitchen test`
 
