@@ -11,7 +11,10 @@ It includes many examples given and sourced from these sources:
 Installing TDD Tools
 ====================
 
- 1. Install [ChefDK][3] (Current version: 0.2.0 - [Mac][chefdk-mac] [Ubuntu][chefdk-ubuntu] [Windows][chefdk-win])
+ 1. Install [ChefDK][3] (Current version: 0.2.0)
+   - [Mac][chefdk-mac]
+   - [Ubuntu][chefdk-ubuntu]
+   - [Windows][chefdk-win]
  2. Install [kitchen-ansible gem][4]<br/>`$(/opt/chefdk/bin/chef shell-init $(basename $SHELL)); sudo /opt/chefdk/embedded/bin/gem install kitchen-ansible --version 0.0.1`
 
 Now you're ready to use test-kitchen along with the [`kitchen-ansible`][4] Provisioner.
