@@ -8,6 +8,8 @@ It includes many examples given and sourced from these sources:
  - [Infrastructure Testing with Ansible and Serverspec][2]
  - [kitchen-ansible Test Kitchen Provisioner][4]
 
+If you are not familiar with [Test Kitchen][5], I suggest you view the quick [test-kitchen demo slideshow here][8].
+
 Installing TDD Tools
 ====================
 
@@ -44,6 +46,7 @@ The ansible-examples repo contains a demo of using [`test-kitchen`][5] with ansi
 [5]: http://kitchen.ci
 [6]: https://www.virtualbox.org/
 [7]: http://www.vagrantup.com/downloads.html
+[8]: http://www.slideshare.net/tomduffield/test-kitchen-demo
 
 [chefdk-mac]: https://opscode-omnibus-packages.s3.amazonaws.com/mac_os_x/10.9/x86_64/chefdk-0.2.0-2.dmg
 [chefdk-ubuntu]: https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chefdk_0.2.0-2_amd64.deb
