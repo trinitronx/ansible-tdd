@@ -9,6 +9,7 @@ It includes many examples given and sourced from these sources:
  - [kitchen-ansible Test Kitchen Provisioner][4]
 
 If you are not familiar with [Test Kitchen][5], I suggest you view the quick [test-kitchen demo slideshow here][8].
+If you have more time, you might want to also check out Fletcher Nichol's full [DevOps Days Presentation here][9].
 
 Installing TDD Tools
 ====================
@@ -47,6 +48,7 @@ The ansible-examples repo contains a demo of using [`test-kitchen`][5] with ansi
 [6]: https://www.virtualbox.org/
 [7]: http://www.vagrantup.com/downloads.html
 [8]: http://www.slideshare.net/tomduffield/test-kitchen-demo
+[9]: http://www.slideshare.net/devopsdays/test-kitchen-10-fletcher-nichol
 
 [chefdk-mac]: https://opscode-omnibus-packages.s3.amazonaws.com/mac_os_x/10.9/x86_64/chefdk-0.2.0-2.dmg
 [chefdk-ubuntu]: https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chefdk_0.2.0-2_amd64.deb
