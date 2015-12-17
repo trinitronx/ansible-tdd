@@ -14,7 +14,7 @@ If you have more time, you might want to also check out Fletcher Nichol's full [
 Installing TDD Tools
 ====================
 
- 1. Install [ChefDK][3] (Current version: 0.6.2)
+ 1. Install [ChefDK][3] (Current version: 0.10.0)
    - [Mac][chefdk-mac]
    - [Ubuntu][chefdk-ubuntu]
    - [Windows][chefdk-win]
@@ -22,7 +22,7 @@ Installing TDD Tools
  3. Install [VirtualBox][6] (Current version: 4.3.28)
    - [Mac][vbox-mac]  (Install via `.dmg` or via [brew-cask][homebrew-cask]: `brew cask install virtualbox`)
    - [Linux][vbox-lin]
-   - [Ubuntu][vbox-ubuntu]
+   - [Ubuntu x86_64 (14.04 Trusty LTS, 14.10 Utopic, 15.04 Vivid)][vbox-ubuntu]
    - [Windows][vbox-win]
  4. Install [Vagrant][7] (Current version: 1.7.2)
    - [Mac][vagrant-mac]  (Install via `.dmg` or via [brew-cask][homebrew-cask]: `brew cask install vagrant`)
@@ -50,14 +50,14 @@ The ansible-examples repo contains a demo of using [`test-kitchen`][5] with ansi
 [8]: http://www.slideshare.net/tomduffield/test-kitchen-demo
 [9]: http://www.slideshare.net/devopsdays/test-kitchen-10-fletcher-nichol
 
-[chefdk-mac]: https://opscode-omnibus-packages.s3.amazonaws.com/mac_os_x/10.8/x86_64/chefdk-0.6.2-1.dmg
-[chefdk-ubuntu]: https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chefdk_0.6.2-1_amd64.deb
-[chefdk-win]: https://opscode-omnibus-packages.s3.amazonaws.com/windows/2008r2/x86_64/chefdk-0.6.2-1.msi
-[vbox-mac]: http://download.virtualbox.org/virtualbox/4.3.28/VirtualBox-4.3.28-100309-OSX.dmg
-[vbox-win]: http://download.virtualbox.org/virtualbox/4.3.28/VirtualBox-4.3.28-100309-Win.exe
+[chefdk-mac]: https://downloads.chef.io/chef-dk/mac/
+[chefdk-ubuntu]: https://downloads.chef.io/chef-dk/ubuntu/
+[chefdk-win]: https://downloads.chef.io/chef-dk/windows/
+[vbox-mac]: http://download.virtualbox.org/virtualbox/5.0.10/VirtualBox-5.0.10-104061-OSX.dmg
+[vbox-win]: http://download.virtualbox.org/virtualbox/5.0.10/VirtualBox-5.0.10-104061-Win.exe
 [vbox-lin]: https://www.virtualbox.org/wiki/Linux_Downloads
-[vbox-ubuntu]: http://download.virtualbox.org/virtualbox/4.3.28/virtualbox-4.3_4.3.28-100309~Ubuntu~raring_amd64.deb
-[vagrant-mac]: https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.2.dmg
-[vagrant-ubuntu]: https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.2_x86_64.deb
-[vagrant-win]: https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.2.msi
+[vbox-ubuntu]: http://download.virtualbox.org/virtualbox/5.0.10/virtualbox-5.0_5.0.10-104061~Ubuntu~trusty_amd64.deb
+[vagrant-mac]: https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4.dmg
+[vagrant-ubuntu]: https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4_x86_64.deb
+[vagrant-win]: https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4.msi
 [homebrew-cask]: http://caskroom.io/
