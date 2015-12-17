@@ -19,12 +19,12 @@ Installing TDD Tools
    - [Ubuntu][chefdk-ubuntu]
    - [Windows][chefdk-win]
  2. Install [kitchen-ansible gem][4]<br/>`$(/opt/chefdk/bin/chef shell-init $(basename $SHELL)); sudo /opt/chefdk/embedded/bin/gem install kitchen-ansible`<br/>OR install to `~/.chefdk/gems/` (with ChefDK >= 0.3.1):<br/>`chef gem install kitchen-ansible`
- 3. Install [VirtualBox][6] (Current version: 4.3.28)
+ 3. Install [VirtualBox][6] (Current version: 5.0.10)
    - [Mac][vbox-mac]  (Install via `.dmg` or via [brew-cask][homebrew-cask]: `brew cask install virtualbox`)
    - [Linux][vbox-lin]
    - [Ubuntu x86_64 (14.04 Trusty LTS, 14.10 Utopic, 15.04 Vivid)][vbox-ubuntu]
    - [Windows][vbox-win]
- 4. Install [Vagrant][7] (Current version: 1.7.2)
+ 4. Install [Vagrant][7] (Current version: 1.7.4)
    - [Mac][vagrant-mac]  (Install via `.dmg` or via [brew-cask][homebrew-cask]: `brew cask install vagrant`)
    - [Ubuntu][vagrant-ubuntu]
    - [Windows][vagrant-win]
