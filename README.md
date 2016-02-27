@@ -23,8 +23,8 @@ Installing TDD Tools
    - With ChefDK < 0.3.1:
      - install to `/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/` with: `$(/opt/chefdk/bin/chef shell-init $(basename $SHELL)); sudo /opt/chefdk/embedded/bin/gem install kitchen-ansible`
    - *OR* With ChefDK >= 0.3.1:
-     - Install to `~/.chefdk/gem/ruby/2.1.0/gems/` with: `chef exec gem install kitchen-ansible`  (*Recommended*)
-     - Install to `/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/` with: `sudo chef gem install kitchen-ansible`  (*NOTE*: This will install to system ChefDK location!)
+     - Install to `~/.chefdk/gem/ruby/2.1.0/gems/` with: `chef exec gem install kitchen-ansible`  (**Recommended**)
+     - Install to `/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/` with: `sudo chef gem install kitchen-ansible`  (**NOTE**: This will install to system ChefDK location!)
  3. Install [VirtualBox][6] (Current version: 5.0.10)
    - [Mac][vbox-mac]  (Install via `.dmg` or via [brew-cask][homebrew-cask]: `brew cask install virtualbox`)
    - [Linux][vbox-lin]
