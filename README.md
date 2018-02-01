@@ -46,6 +46,36 @@ The ansible-examples repo contains a demo of using [`test-kitchen`][5] with ansi
  2. `cd ansible-examples/tomcat-standalone`
  3. Run Test Kitchen: `kitchen test`
 
+Ansible Guard Syntax Check Example
+==================================
+
+When developing playbooks and roles, it's helpful to have YAML syntax check (and of course `ansible-playbook --syntax-check`).  In this repo is an example `Guardfile` for using the [Guard Ruby gem][guard-gem] to do this automatically for you each time you edit a file!  Plus, it notifies you of results via a "growl" style notification (on Mac).  This should also work on Windows or Linux with the alternate gems listed in `Gemfile`, but this has not been tested for a while!.
+
+To use this example, you first need Ruby >= 2.3 or >= 2.2.6.  I used Ruby 2.2.5 via [RVM][rvm].  You also need to install [`bundler`][bundler] (`gem install bundler`).
+
+Once you have Ruby and `bundler`, all you need is:
+
+```
+# Make sure you are in this repo's directory!
+# cd path/to/ansible-tdd/
+bundle install
+bundle exec guard
+```
+
+Now, try editing a file to introduce a syntax error and Guard will notify you! (It also shows if syntax check result was success)
+
+If you are using playbooks with Ansible Vault vars files, you need to place your Vault password files (just a text file containing the Ansible Vault encryption password) into `$HOME/secrets/`.
+
+This example `Guardfile` has this path hardcoded, and uses a naming convention based on the playbook name!  If you want to modify this location, edit your `Guardfile` appropriately.
+
+For a playbook with encrypted vars file, use task: `- include_vars: path/to/your/encrypted-vars.yml`
+
+If the playbook directory was named `foo-playbook`, place the Ansible Vault password file in this location:  `$HOME/secrets/ansible-vault-foo-playbook`
+
+The reason this is necessary is because `ansible-playbook --syntax-check` will throw an error if the playbook cannot decrypt the Ansible vault vars file, and also if you try to use an undefined variable. To work around this, the example `Guardfile` checks for existence of a Vault password file in `~/secrets` that matches the playbook name.  If found, it passes this in to `ansible-playbook --syntax-check` via  `--vault-password-file=$HOME/secrets/ansible-vault-<PLAYBOOK_NAME>`.
+
+
+
 [1]: https://mestachs.wordpress.com/tag/server-spec/
 [2]: http://sharknet.us/2014/02/06/infrastructure-testing-with-ansible-and-serverspec-part-2/
 [3]: http://downloads.getchef.com/chef-dk/
@@ -63,7 +93,12 @@ The ansible-examples repo contains a demo of using [`test-kitchen`][5] with ansi
 [vbox-win]: http://download.virtualbox.org/virtualbox/5.0.10/VirtualBox-5.0.10-104061-Win.exe
 [vbox-lin]: https://www.virtualbox.org/wiki/Linux_Downloads
 [vbox-ubuntu]: http://download.virtualbox.org/virtualbox/5.0.10/virtualbox-5.0_5.0.10-104061~Ubuntu~trusty_amd64.deb
+
 [vagrant-mac]: https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4.dmg
 [vagrant-ubuntu]: https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4_x86_64.deb
 [vagrant-win]: https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4.msi
 [homebrew-cask]: http://caskroom.io/
+
+[guard-gem]: http://guardgem.org/
+[bundler]: http://bundler.io/
+[rvm]: https://rvm.io/
