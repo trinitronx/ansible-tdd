@@ -1,5 +1,6 @@
 Ansible TDD Research
 ====================
+<noscript><a href="https://liberapay.com/trinitronx/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
 
 This repo contains some submodule repos & resources for Ansible TDD, BDD, XDD, and such.
 It includes many examples given and sourced from these sources:
