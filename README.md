@@ -14,7 +14,7 @@ If you have more time, you might want to also check out Fletcher Nichol's full [
 Installing TDD Tools
 ====================
 
- 1. Install [ChefDK][3] (Current version: 0.10.0)
+ 1. Install [ChefDK][3] (Current version: 2.4.17)
    - [Mac][chefdk-mac]
    - [Ubuntu][chefdk-ubuntu]
    - [Windows][chefdk-win]
@@ -25,12 +25,13 @@ Installing TDD Tools
    - *OR* With ChefDK >= 0.3.1:
      - Install to `~/.chefdk/gem/ruby/2.1.0/gems/` with: `chef exec gem install kitchen-ansible`  (**Recommended**)
      - Install to `/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/` with: `sudo chef gem install kitchen-ansible`  (**NOTE**: This will install to system ChefDK location!)
- 3. Install [VirtualBox][6] (Current version: 5.0.10)
+ 3. Install [VirtualBox][6] (Current version: 5.2.6)
    - [Mac][vbox-mac]  (Install via `.dmg` or via [brew-cask][homebrew-cask]: `brew cask install virtualbox`)
    - [Linux][vbox-lin]
-   - [Ubuntu x86_64 (14.04 Trusty LTS, 14.10 Utopic, 15.04 Vivid)][vbox-ubuntu]
+   - [Ubuntu x86_64 (14.04 Trusty LTS)][vbox-ubuntu-trusty]
+   - [Ubuntu x86_64 (16.04 Xenial LTS)][vbox-ubuntu-xenial]
    - [Windows][vbox-win]
- 4. Install [Vagrant][7] (Current version: 1.7.4)
+ 4. Install [Vagrant][7] (Current version: 2.0.2)
    - [Mac][vagrant-mac]  (Install via `.dmg` or via [brew-cask][homebrew-cask]: `brew cask install vagrant`)
    - [Ubuntu][vagrant-ubuntu]
    - [Windows][vagrant-win]
@@ -95,17 +96,18 @@ This repo contains an example playbook under `playbooks/wemux-vault/example.yml`
 [8]: http://www.slideshare.net/tomduffield/test-kitchen-demo
 [9]: http://www.slideshare.net/devopsdays/test-kitchen-10-fletcher-nichol
 
-[chefdk-mac]: https://downloads.chef.io/chef-dk/mac/
-[chefdk-ubuntu]: https://downloads.chef.io/chef-dk/ubuntu/
-[chefdk-win]: https://downloads.chef.io/chef-dk/windows/
-[vbox-mac]: http://download.virtualbox.org/virtualbox/5.0.10/VirtualBox-5.0.10-104061-OSX.dmg
-[vbox-win]: http://download.virtualbox.org/virtualbox/5.0.10/VirtualBox-5.0.10-104061-Win.exe
+[chefdk-mac]: https://downloads.chef.io/chefdk#mac_os_x
+[chefdk-ubuntu]: https://downloads.chef.io/chefdk#ubuntu
+[chefdk-win]: https://downloads.chef.io/chefdk#windows
+[vbox-mac]: https://download.virtualbox.org/virtualbox/5.2.6/VirtualBox-5.2.6-120293-OSX.dmg
+[vbox-win]: https://download.virtualbox.org/virtualbox/5.2.6/VirtualBox-5.2.6-120293-Win.exe
 [vbox-lin]: https://www.virtualbox.org/wiki/Linux_Downloads
-[vbox-ubuntu]: http://download.virtualbox.org/virtualbox/5.0.10/virtualbox-5.0_5.0.10-104061~Ubuntu~trusty_amd64.deb
+[vbox-ubuntu-trusty]: https://download.virtualbox.org/virtualbox/5.2.6/virtualbox-5.2_5.2.6-120293~Ubuntu~trusty_amd64.deb
+[vbox-ubuntu-xenial]: https://download.virtualbox.org/virtualbox/5.2.6/virtualbox-5.2_5.2.6-120293~Ubuntu~xenial_amd64.deb
 
-[vagrant-mac]: https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4.dmg
-[vagrant-ubuntu]: https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4_x86_64.deb
-[vagrant-win]: https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4.msi
+[vagrant-mac]: https://releases.hashicorp.com/vagrant/2.0.2/vagrant_2.0.2_x86_64.dmg
+[vagrant-ubuntu]: https://releases.hashicorp.com/vagrant/2.0.2/vagrant_2.0.2_x86_64.deb
+[vagrant-win]: https://releases.hashicorp.com/vagrant/2.0.2/vagrant_2.0.2_x86_64.msi
 [homebrew-cask]: http://caskroom.io/
 
 [guard-gem]: http://guardgem.org/
