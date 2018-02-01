@@ -28,8 +28,8 @@ Installing TDD Tools
  3. Install [VirtualBox][6] (Current version: 5.2.6)
    - [Mac][vbox-mac]  (Install via `.dmg` or via [brew-cask][homebrew-cask]: `brew cask install virtualbox`)
    - [Linux][vbox-lin]
-   - [Ubuntu x86_64 (14.04 Trusty LTS)][vbox-ubuntu-trusty]
-   - [Ubuntu x86_64 (16.04 Xenial LTS)][vbox-ubuntu-xenial]
+     - [Ubuntu x86_64 (14.04 Trusty LTS)][vbox-ubuntu-trusty]
+     - [Ubuntu x86_64 (16.04 Xenial LTS)][vbox-ubuntu-xenial]
    - [Windows][vbox-win]
  4. Install [Vagrant][7] (Current version: 2.0.2)
    - [Mac][vagrant-mac]  (Install via `.dmg` or via [brew-cask][homebrew-cask]: `brew cask install vagrant`)
