@@ -9,5 +9,5 @@
 	path = ansible-sample-tdd
 	url = https://github.com/volanja/ansible-sample-tdd.git
 [submodule "ansible-role-wemux"]
-	path = ansible-role-wemux
+	path = roles/ansible-role-wemux
 	url = https://github.com/trinitronx/ansible-role-wemux.git
