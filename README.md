@@ -64,16 +64,25 @@ bundle exec guard
 
 Now, try editing a file to introduce a syntax error and Guard will notify you! (It also shows if syntax check result was success)
 
+For example, this repo contains some roles under `roles/`.  Edit one of the tasks files to introduce an error.
+
+If you are using an older version of Ansible, you may run into errors with playbooks that include encrypted Ansible Vault vars files!  The example `Guardfile` handles this gracefully, as long as you use a vault password file and follow the naming convention.
+
 If you are using playbooks with Ansible Vault vars files, you need to place your Vault password files (just a text file containing the Ansible Vault encryption password) into `$HOME/secrets/`.
 
 This example `Guardfile` has this path hardcoded, and uses a naming convention based on the playbook name!  If you want to modify this location, edit your `Guardfile` appropriately.
 
-For a playbook with encrypted vars file, use task: `- include_vars: path/to/your/encrypted-vars.yml`
+## Encrypted Vars file Examples:
+
+For a playbook with encrypted vars file, it might be using task: `- include_vars: path/to/your/encrypted-vars.yml`
 
 If the playbook directory was named `foo-playbook`, place the Ansible Vault password file in this location:  `$HOME/secrets/ansible-vault-foo-playbook`
 
-The reason this is necessary is because `ansible-playbook --syntax-check` will throw an error if the playbook cannot decrypt the Ansible vault vars file, and also if you try to use an undefined variable. To work around this, the example `Guardfile` checks for existence of a Vault password file in `~/secrets` that matches the playbook name.  If found, it passes this in to `ansible-playbook --syntax-check` via  `--vault-password-file=$HOME/secrets/ansible-vault-<PLAYBOOK_NAME>`.
+The reason this is necessary is because in older versions of Ansible, `ansible-playbook --syntax-check` will throw an error if the playbook cannot decrypt the Ansible vault vars file, and also if you try to use an undefined variable. To work around this, the example `Guardfile` checks for existence of a Vault password file in `~/secrets` that matches the playbook name.  If found, it passes this in to `ansible-playbook --syntax-check` via  `--vault-password-file=$HOME/secrets/ansible-vault-<PLAYBOOK_NAME>`.
 
+New versions of Ansible will not have this problem in `--syntax-check` mode!
+
+This repo contains an example playbook under `playbooks/wemux-vault/example.yml` that uses an encypted vars file.  The password to decrypt this is included in `playbooks/wemux-vault/ansible-vault-wemux-vault`.  Place this file at `$HOME/secrets/ansible-vault-wemux-vault` to fix any Guard errors.  The included `Guardfile` will see you have placed the password file there and now syntax check should work!
 
 
 [1]: https://mestachs.wordpress.com/tag/server-spec/
