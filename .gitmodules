@@ -11,3 +11,9 @@
 [submodule "ansible-role-wemux"]
 	path = roles/ansible-role-wemux
 	url = https://github.com/trinitronx/ansible-role-wemux.git
+[submodule "geerlingguy.git"]
+	path = roles/geerlingguy.git
+	url = https://github.com/geerlingguy/ansible-role-git.git
+[submodule "trinitronx.tmux"]
+	path = roles/trinitronx.tmux
+	url = https://github.com/trinitronx/ansible-role-tmux.git
